@@ -3,9 +3,114 @@
   Chapter 1
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author:    Devin Ledesma
+  Date:      03/28/2025
+  Filename:  styles.css
 */
 
 /* Your CSS goes here */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/* Reset styling */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif;
+}
+/* End reset styling */
+
+:root {
+  --main-bg-color: #313743;
+  --main-font-color: #cbe957;
+  --main-form-color: #fff;
+  --main-accent-color: #c68dfe;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1025px;
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+}
+
+#mainContainer {
+  position: relative;
+  width: 750px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid var(--main-accent-color);
+  color: var(--main-font-color);
+}
+
+#mainContainer #characterForm {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+}
+
+#characterForm h2 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#characterForm .input-box {
+  position: relative;
+  width: 100%;
+
+  margin: 25px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--main-form-color);
+}
+
+.input-box select {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--main-form-color);
+  border-bottom: 2px solid var(--main-form-color);
+}
+
+.input-box select option {
+  color: var(--main-font-color);
+  background: transparent;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+#characterForm button {
+  width: 100%;
+  height: 3rem;
+  background: transparent;
+  border: 2px solid var(--main-accent-color);
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--main-form-color);
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
