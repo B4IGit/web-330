@@ -1,43 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!--
     Pragmatic JavaScript
     Chapter 1
     Programming Assignment
 
-    Author:
-    Date:
-    Filename:
+    Author:   Devin Ledesma
+    Date:     03/27/20
+    Filename: index.html
   -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Roleplay Character Generator</title>
+
+    <!-- styles.css -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <div id="mainContainer">
       <form id="characterForm">
-        <label for="heroName">Hero Name:</label><br />
-        <input type="text" id="heroName" name="heroName" required /><br />
-        <label for="heroGender">Hero Gender:</label><br />
-        <select id="heroGender" name="heroGender" required>
-          <option value="">Select...</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option></select>
-          <br />
-        <label for="heroClass">Hero Class:</label><br />
-        <select id="heroClass" name="heroClass" required>
-          <option value="">Select...</option>
-          <option value="warrior">Warrior</option>
-          <option value="mage">Mage</option>
-          <option value="rogue">Rogue</option></select>
-          <br />
+        <h2>Create your Character</h2>
+        <div class="input-box">
+          <label for="heroName">Hero Name:</label><br />
+          <input type="text" id="heroName" name="heroName" required />
+        </div>
+        <div class="input-box">
+          <label for="heroGender">Hero Gender:</label>
+          <br>
+          <div class="custom-select">
+            <select id="heroGender" name="heroGender" required>
+              <option value=""></option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="heroClass">Hero Class:</label>
+          <br>
+         <div class="custom-select">
+           <select id="heroClass" name="heroClass" required>
+             <option value=""></option>
+             <option value="warrior">Warrior</option>
+             <option value="mage">Mage</option>
+             <option value="rogue">Rogue</option>
+           </select>
+         </div>
+        </div>
         <button id="generateHero">Generate Hero</button>
       </form>
 
-      <div id="characterOutput"></div>
+      <div id="characterOutput">
+      </div>
     </div>
 
     <script src="script.js"></script>
   </body>
 </html>
+
