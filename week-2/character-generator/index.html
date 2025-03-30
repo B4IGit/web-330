@@ -24,12 +24,11 @@
       <form id="characterForm">
         <h2>Create your Character</h2>
         <div class="input-box">
-          <label for="heroName">Hero Name:</label><br />
           <input type="text" id="heroName" name="heroName" required />
+          <label for="heroName">Hero Name:</label><br />
         </div>
+        <div id="error-name"></div>
         <div class="input-box">
-          <label for="heroGender">Hero Gender:</label>
-          <br>
           <div class="custom-select">
             <select id="heroGender" name="heroGender" required>
               <option value=""></option>
@@ -37,11 +36,11 @@
               <option value="female">Female</option>
               <option value="other">Other</option>
             </select>
+            <label for="heroGender">Hero Gender:</label>
           </div>
         </div>
+        <div id="error-gender"></div>
         <div class="input-box">
-          <label for="heroClass">Hero Class:</label>
-          <br>
          <div class="custom-select">
            <select id="heroClass" name="heroClass" required>
              <option value=""></option>
@@ -49,8 +48,10 @@
              <option value="mage">Mage</option>
              <option value="rogue">Rogue</option>
            </select>
+           <label for="heroClass">Hero Class:</label>
          </div>
         </div>
+        <div id="error-class"></div>
         <button id="generateHero">Generate Hero</button>
       </form>
 
