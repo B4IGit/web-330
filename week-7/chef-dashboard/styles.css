@@ -9,3 +9,67 @@
 */
 
 /* Add your CSS styles here */
+:root {
+  --main-bg-white: #FFFFFF;
+  --main-purple: #6200EE;
+  --main-dark-purple: #3700B3;
+  --main-teal: #03DAC5;
+  --main-red: #B00020;
+  --main-black: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.chef-container {
+  background: linear-gradient(to bottom, var(--main-dark-purple) 20%, var(--main-bg-white) 20%);
+  border-radius: 10px;
+  box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  padding: 20px 30px;
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-black);
+}
+
+.chef-container h2 {
+  font-size: 24px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.chef-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.chef-container img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.chef-container .error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 20px;
+  color: var(--main-red);
+}
